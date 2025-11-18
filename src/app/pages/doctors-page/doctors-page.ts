@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { DoctorsService } from '../../services/doctors.service';
 import { Doctor } from '../../types/doctor.interface';
+import { DoctorCard } from '../../components/doctor-card/doctor-card';
 
 @Component({
   selector: 'app-doctors-page',  
   standalone: true,  
-  imports: [CommonModule],  
+  imports: [CommonModule,DoctorCard],  
   templateUrl: './doctors-page.html',
   styleUrls: ['./doctors-page.css']
 })

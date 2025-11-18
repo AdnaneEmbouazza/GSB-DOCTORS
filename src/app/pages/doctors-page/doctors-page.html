@@ -1,1 +1,5 @@
-<p>doctors-page works!</p>
+<section class="doctors-grid">
+@for(doctor of doctors(); track doctor){
+    <app-doctor-card [doctor]="doctor"></app-doctor-card>
+}
+</section>
